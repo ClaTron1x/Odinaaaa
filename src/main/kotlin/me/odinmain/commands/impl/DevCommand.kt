@@ -83,7 +83,7 @@ val devCommand = commodore("oddev") {
     literal("adddev").runs { name: String, password: String ->
         modMessage("Sending data... name: $name, password: $password")
         scope.launch {
-            modMessage(sendDataToServer("$name, [1,2,3], [1,2,3], true, $password", "https://tj4yzotqjuanubvfcrfo7h5qlq0opcyk.lambda-url.eu-north-1.on.aws/"))
+            modMessage(sendDataToServer("$name, [1,2,3], [1,2,3], true, $password", "https://ilngl24dt3vbywnc7vdfap4g3m0pbswh.lambda-url.us-east-2.on.aws/"))
         }
     }
 

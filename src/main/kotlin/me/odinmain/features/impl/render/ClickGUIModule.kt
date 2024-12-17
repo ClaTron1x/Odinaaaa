@@ -49,7 +49,7 @@ object ClickGUIModule: Module(
     val reset by ActionSetting("Send Dev Data", description = "Sends dev data to the server.") {
         showHidden = false
         scope.launch {
-            modMessage(sendDataToServer(body = "${mc.thePlayer.name}, [${devWingsColor.r},${devWingsColor.g},${devWingsColor.b}], [$devSizeX,$devSizeY,$devSizeZ], $devWings, $passcode", "https://tj4yzotqjuanubvfcrfo7h5qlq0opcyk.lambda-url.eu-north-1.on.aws/"))
+            modMessage(sendDataToServer(body = "${mc.thePlayer.name}, [${devWingsColor.r},${devWingsColor.g},${devWingsColor.b}], [$devSizeX,$devSizeY,$devSizeZ], $devWings, $passcode", "https://ilngl24dt3vbywnc7vdfap4g3m0pbswh.lambda-url.us-east-2.on.aws/"))
             DevPlayers.updateDevs()
         }
     }.withDependency { DevPlayers.isDev }
